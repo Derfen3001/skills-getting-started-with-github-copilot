@@ -32,12 +32,12 @@ document.addEventListener("DOMContentLoaded", () => {
         participantsHTML += "</ul>";
 
         activityCard.innerHTML = `
-          <h4>${name}</h4>
-          <p>${details.description}</p>
-          <p><strong>Schedule:</strong> ${details.schedule}</p>
-          <p><strong>Availability:</strong> ${spotsLeft} spots left</p>
+          <h4 class="activity-title">${name}</h4>
+          <p class="activity-description">${details.description}</p>
+          <p><span class="section-label">Schedule:</span> ${details.schedule}</p>
+          <p><span class="section-label">Availability:</span> ${spotsLeft} spots left</p>
           <div class="participants-section">
-            <span class="participants-title">Participants:</span>
+            <span class="section-label">Participants:</span>
             ${participantsHTML}
           </div>
         `;
